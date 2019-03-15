@@ -1,0 +1,91 @@
+.intro-modal {
+  position: fixed;
+  top: 50px;
+  left: calc(50% - 320px/2);
+  z-index: 2;
+  & .intro-modal__block {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 290px;
+    padding: 60px 20px 40px;
+    box-sizing: border-box;
+    box-shadow: 1px 0px 47px -3px #bcbcbc;
+    background: #fff;
+    & .intro-modal__title,
+    & .intro-modal__text {
+      text-align: center;
+    }
+    & .modal-form {
+      text-align: center;
+      & .form-cart {
+        margin-bottom: 20px;
+        & input {
+          border: none;
+          border-bottom: 1px solid #000;
+        }
+      }
+      & .modal-form__button {
+        margin-top: 30px;
+        padding: 15px 35px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        background: #91aa59;
+        border: none;
+        outline: none;
+        &:hover,
+        &:focus {
+          box-shadow: 0px 0px 10px 0px #00000075;
+        }
+        &:active {
+          box-shadow: 0px 0px 10px 0px #00000000;
+        }
+      }
+    }
+    & .modal-form__close {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      padding: 0;
+      top: 30px;
+      right: 30px;
+      border: none;
+      background: none;
+      outline: none;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 2px;
+        top: 12px;
+        left: 5px;
+        background: #000;
+        transform: rotate(45deg);
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 2px;
+        top: 12px;
+        left: 5px;
+        background: #000;
+        transform: rotate(-45deg);
+      }
+      &:hover,
+      &:focus {
+        box-shadow: 1px -1px 13px -1px #bcbcbc;
+      }
+      &:active {
+        box-shadow: 0px 0px 15px -4px #bcbcbc;
+      }
+    }
+  }
+}
+
+.d-none {
+  display: none;
+  transition: all 1c;
+}

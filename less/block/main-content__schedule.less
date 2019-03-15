@@ -8,17 +8,83 @@
   }
 }
 
-.beginner {
+.cart {
+  position: relative;
   margin: 20px;
   border-radius: 4px;
   padding: 100px 45px 40px;
   color: #fff;
-  background-color: rgba(145, 170, 89, 0.5);
-  & .beginner__title {
+  & .cart__title {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     & span {
       font-size: 12px;
     }
+  }
+  & .cart__text {
+    & span {
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+  }
+  & .cart__list {
+    & .cart__item {
+      padding-bottom: 10px;
+    }
+  }
+  & .cart__button {
+    padding: 8px 25px;
+    position: relative;
+    & span {
+      position: absolute;
+      top: 7px;
+      left: 100px;
+    }
+    &:hover,
+    &:focus {
+      padding-right: 60px;
+    }
+  }
+}
+
+.schedule__cart--beginner {
+  background-color: rgb(200, 212, 172);
+  &::before {
+    content: "01";
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    font-size: 133px;
+    color: rgba(255, 255, 255, 0.102);
+    line-height: 1.2;
+    font-family: 'ProximaNova', 'Roboto', sans-serif;
+  }
+}
+
+.schedule__cart--profi {
+  background-color: rgb(178, 195, 138);
+  &::before {
+    content: "02";
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    font-size: 133px;
+    color: rgba(255, 255, 255, 0.102);
+    line-height: 1.2;
+    font-family: 'ProximaNova', 'Roboto', sans-serif;
+  }
+}
+
+.schedule__cart--master {
+  background-color: rgb(156, 178, 105);
+  &::before {
+    content: "03";
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    font-size: 133px;
+    color: rgba(255, 255, 255, 0.102);
+    line-height: 1.2;
+    font-family: 'ProximaNova', 'Roboto', sans-serif;
   }
 }

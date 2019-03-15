@@ -1,0 +1,29 @@
+.main-footer {
+  background: #91aa59;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  color: #f1f4ea;
+}
+
+.footer__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  & .footer__copyright {
+    order: 3;
+  }
+  & .footer__logo {
+    margin-bottom: 8px;
+    & .footer__logo--text {
+      margin: 0;
+    }
+  }
+  & .footer__social {
+    width: 80px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".owl-carousel").owlCarousel({loop:!0,items:1}),$(".intro__button").on("click",function(o){$(".intro-modal").removeClass("d-none")}),$(".modal-form__close").on("click",function(o){$(".intro-modal").addClass("d-none")})});
