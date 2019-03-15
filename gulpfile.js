@@ -75,7 +75,7 @@ gulp.task("html:update", function (done) {
 });
 
 gulp.task("serve", function () {
-  server.init({ server: "build/", notify: false, open: true, cors: true, ui: false});
+  server.init({ server: "build/", notify: false, open: true, cors: true, ui: false });
 
   gulp.watch("less/**/*.less", gulp.task("style"));
   gulp.watch("js/**/*.js", gulp.task("js"));
