@@ -1,3 +1,8 @@
+.main-body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
 .container {
   width: 290px;
   margin: 0 auto;
@@ -12,4 +17,40 @@ a {
 ul {
   list-style: none;
   padding-left: 0;
+}
+
+h2 {
+  font-size: 18px;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 14px;
+  font-family: 'SFUIText', 'Roboto', sans-serif;
+}
+
+button {
+  font-size: 11px;
+  font-family: "SFUIText", 'Roboto', sans-serif;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background: rgba(255, 255, 255, 0);
+  outline: none;
+  &:hover,
+  &:focus {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 10px 0px #00000075;
+  }
+  &:active {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 5px 0px #00000075;
+  }
 }
