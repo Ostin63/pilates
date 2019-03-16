@@ -1,0 +1,60 @@
+.header-modal__container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.modal-manu {
+  position: relative;
+  padding: 90px 40px;
+  background: #91aa59;
+  & .modal-nav {
+    & a {
+      margin-bottom: 50px;
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  & .modal-close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 25px;
+      height: 2px;
+      top: 14px;
+      left: 2px;
+      background: #fff;
+      transform: rotate(45deg);
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 25px;
+      height: 2px;
+      top: 14px;
+      left: 2px;
+      background: #fff;
+      transform: rotate(-45deg);
+    }
+    &:hover,
+    &:focus {
+      box-shadow: 1px -1px 13px -1px #bcbcbc;
+    }
+    &:active {
+      box-shadow: 0px 0px 15px -4px #bcbcbc;
+    }
+  }
+}

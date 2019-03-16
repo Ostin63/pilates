@@ -18,6 +18,41 @@
       text-transform: uppercase;
     }
   }
+  & .main-nav__phone {
+    display: none;
+  }
+  & .main-nav__toogles {
+    margin-top: -5px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    & .toogles {
+      position: relative;
+      top: 15px;
+      left: 8px;
+      width: 13px;
+      height: 2px;
+      background: #fbfbfb;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: 0;
+        width: 7px;
+        height: 2px;
+        background: #fbfbfb;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 13px;
+        height: 2px;
+        background: #fbfbfb;
+      }
+    }
+  }
 }
 
 .header-title {
@@ -31,5 +66,14 @@
   }
   & .header-title__button {
     padding: 15px;
+  }
+}
+
+@media @tablet-widths {
+  .header {
+    width: 764px;
+    height: 679px;
+    margin: 0 auto;
+    background: url(../img/bg-header-764.png) 50% 50% no-repeat;
   }
 }

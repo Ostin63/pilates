@@ -9,4 +9,10 @@ $(document).ready(function () {
   $('.modal-form__close').on('click', function (evt) {
     $('.intro-modal').addClass('d-none')
   });
+  $('.main-nav__toogles').on('click', function(evt) {
+    $('.header-modal__container').removeClass('d-none')
+  });
+  $('.modal-close').on('click', function (evt){
+    $('.header-modal__container').addClass(('d-none'))
+  });
 });
