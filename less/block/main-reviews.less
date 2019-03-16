@@ -15,7 +15,6 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    box-shadow: 1px -1px 29px -1px #bcbcbc;
     & img {
       margin: 0 auto;
       width: 98px;
@@ -52,6 +51,76 @@
     }
     &:hover {
       box-shadow: none;
+    }
+  }
+}
+
+@media @tablet-widths {
+  .reviews__list {
+    width: 516px;
+    margin: 0 auto;
+    & .reviews__item {
+      padding-left: 35px;
+      padding-right: 35px;
+      flex-direction: row;
+      text-align: center;
+      & .reviews__item--title {
+        position: relative;
+        margin-left: 20px;
+        text-align: left;
+        & h4 {
+          margin: 0;
+          margin-bottom: 10px;
+        }
+        & .reviews__item--social {
+          margin: 0;
+          
+          & p {
+            margin: 0;
+          }
+        }
+        & .reviews {
+          position: absolute;
+          width: 41px;
+          height: auto;
+          top: 0;
+          right: 10px;
+        }
+      }
+    }
+  }
+  .owl-nav .owl-prev {
+    position: absolute;
+    top: 140px;
+    left: -70px;
+    z-index: 5;
+    outline: none;
+    & span {
+      display: none;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      width: 18px;
+      height: 27px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='18px' height='27px'%3E%3Cpath fill-rule='evenodd' stroke='rgb(200, 212, 172)' stroke-width='2px' stroke-linecap='butt' stroke-linejoin='miter' fill='none' d='M13.669,25.005 L0.991,13.005 L13.664,1.002 '/%3E%3C/svg%3E");
+    }
+  }
+  .owl-nav .owl-next {
+    position: absolute;
+    top: 140px;
+    right: -50px;
+    z-index: 5;
+    outline: none;
+    & span {
+      display: none;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      width: 18px;
+      height: 27px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='17px' height='27px'%3E%3Cpath fill-rule='evenodd' stroke='rgb(200, 212, 172)' stroke-width='2px' stroke-linecap='butt' stroke-linejoin='miter' fill='none' d='M2.370,0.999 L15.009,12.997 L2.374,24.999 '/%3E%3C/svg%3E");
     }
   }
 }

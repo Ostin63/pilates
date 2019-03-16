@@ -1,7 +1,21 @@
 $(document).ready(function () {
   $('.owl-carousel').owlCarousel({
     loop: true,
-    items: 1
+    items: 1,
+    center: false,
+    responsive: { 
+      0: {
+        nav: false,
+        margin: 50
+        
+      },
+      764: {
+        nav:true
+      },
+      1366: {
+        nav:true
+      }
+    }
   });
   $('.intro__button').on('click', function(evt){
     $('.intro-modal').removeClass('d-none')

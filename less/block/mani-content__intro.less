@@ -1,4 +1,4 @@
-.mani-content__intro {
+.main-content__intro {
   padding-top: 40px;
   & .intro__text {
     & span {
@@ -13,6 +13,22 @@
     & span {
       font-size: 20px;
       margin-left: 5px;
+    }
+  }
+}
+
+@media @tablet-widths {
+  & .main-content__container {
+    position: relative;
+    margin-bottom: 200px;
+    & .main-content__intro {
+      width: 320px;
+    }
+    & .intro__img {
+      width: 417px;
+      position: absolute;
+      top: 100px;
+      right: 60px;
     }
   }
 }

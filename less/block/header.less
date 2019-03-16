@@ -62,10 +62,17 @@
   line-height: 1.2;
   font-weight: 400;
   & .header-title__text {
+    font-size: 30px;
     font-weight: 300;
+  }
+  & .header-title__paragraph {
+    display: none;
   }
   & .header-title__button {
     padding: 15px;
+    & .button-arrow {
+      display: none;
+    }
   }
 }
 
@@ -75,5 +82,69 @@
     height: 679px;
     margin: 0 auto;
     background: url(../img/bg-header-764.png) 50% 50% no-repeat;
+  }
+  .main-nav {
+    & .main-nav__logo {
+      & .main-nav__logo--text {
+        margin: 0;
+        font-size: 10px;
+        color: #fff;
+        text-transform: uppercase;
+      }
+    }
+    & .main-nav__phone {
+      display: block;
+      font-size: 14px;
+      font-family: 'SFUIText', 'Roboto', sans-serif;
+      color: rgba(0, 0, 0, 0.871);
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 1.285;
+      order: 3;
+    }
+    & .main-nav__toogles {
+      & .toogles {
+        left: 5px;
+        width: 19px;
+        &::before {
+          top: -7px;
+          width: 10px;
+        }
+        &::after {
+          top: 7px;
+          width: 19px;
+        }
+      }
+    }
+  }
+  .header-title {
+    width: 350px;
+    & .header-title__text {
+      font-size: 48px;
+    }
+    & .header-title__paragraph {
+      display: block;
+      margin-bottom: 50px;
+      font-size: 18px;
+      font-weight: 300;
+      text-transform: lowercase;
+    }
+    & .header-title__button {
+      position: relative;
+      padding-left: 40px;
+      padding-right: 40px;
+      font-size: 14px;
+      & .button-arrow {
+        position: absolute;
+        display: block;
+        top: 17px;
+        left: 210px;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        padding-right: 120px;
+      }
+    }
   }
 }

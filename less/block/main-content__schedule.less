@@ -1,4 +1,4 @@
-.main-content__schedule {
+.main-content__container {
   padding-top: 40px;
   & .schedule__title {
     margin-bottom: 25px;
@@ -86,5 +86,18 @@
     color: rgba(255, 255, 255, 0.102);
     line-height: 1.2;
     font-family: 'ProximaNova', 'Roboto', sans-serif;
+  }
+}
+
+@media @tablet-widths {
+  .main-content__schedule {
+    display: flex;
+    justify-content: space-between;
+  }
+  .cart {
+    width: 206px;
+    padding: 100px 30px 40px;
+    margin: 0;
+    box-sizing: border-box;
   }
 }
