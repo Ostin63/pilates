@@ -1,5 +1,6 @@
 .main-reviews {
   padding: 10px;
+  margin-bottom: 70px;
   & .reviews__title {
     margin-bottom: 50px;
     & span {
@@ -9,6 +10,7 @@
 }
 
 .reviews__list {
+  box-shadow: 0px 0px 37px 4px #c0c0c0;
   & .reviews__item {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -28,7 +30,7 @@
         justify-content: space-between;
         align-items: center;
       }
-      & .reviews {
+      & img {
         display: none;
       }
     }
@@ -36,6 +38,9 @@
 }
 
 .owl-theme .owl-dots {
+  position: absolute;
+  bottom: -50px;
+  left: 100px;
   & .owl-dot {
     outline: none;
     & span {
@@ -81,7 +86,7 @@
             margin: 0;
           }
         }
-        & .reviews {
+        & img {
           display: block;
           position: absolute;
           width: 41px;
@@ -92,9 +97,12 @@
       }
     }
   }
+  .owl-theme .owl-dots {
+    left: 230px;
+  }
   .owl-nav .owl-prev {
     position: absolute;
-    top: 70px;
+    top: 90px;
     left: -70px;
     z-index: 5;
     outline: none;
@@ -111,7 +119,7 @@
   }
   .owl-nav .owl-next {
     position: absolute;
-    top: 70px;
+    top: 90px;
     right: -50px;
     z-index: 5;
     outline: none;
@@ -125,5 +133,35 @@
       height: 27px;
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='17px' height='27px'%3E%3Cpath fill-rule='evenodd' stroke='rgb(200, 212, 172)' stroke-width='2px' stroke-linecap='butt' stroke-linejoin='miter' fill='none' d='M2.370,0.999 L15.009,12.997 L2.374,24.999 '/%3E%3C/svg%3E");
     }
+  }
+}
+
+@media @desktop-widths {
+  .reviews__list {
+    width: 980px;
+    margin: 0 auto;
+    & .reviews__item {
+      padding: 95px 150px 110px;
+      background: #fff;
+      & img {
+        width: 185px;
+        height: 178px;
+      }
+      & .reviews__item--title {
+        & img {
+          width: 103px;
+          height: 132px;
+          top: -50px;
+          right: -100px;
+        }
+      }
+    }
+  }
+  .owl-theme .owl-dots {
+    left: 500px;
+  }
+  .owl-nav .owl-prev,
+  .owl-nav .owl-next {
+    top: 160px;
   }
 }

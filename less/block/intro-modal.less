@@ -23,6 +23,7 @@
         & input {
           border: none;
           border-bottom: 1px solid #000;
+          outline: none;
         }
       }
       & .modal-form__button {
@@ -41,6 +42,42 @@
         }
         &:active {
           box-shadow: 0px 0px 10px 0px #00000000;
+        }
+      }
+      & .modal-form__checkbox {
+        & label {
+          position: relative;
+          display: block;
+          cursor: pointer;
+          user-select: none;
+          margin-left: 10px;
+        }
+        & input+label::before {
+          content: "";
+          position: absolute;
+          left: 4px;
+          top: 0;
+          width: 19px;
+          height: 19px;
+          background: #91aa59;
+          opacity: 1;
+          z-index: 2;
+        }
+        & input:checked+label::before {
+          opacity: 0;
+        }
+        & input+label::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 4px;
+          width: 19px;
+          height: 19px;
+          background: #91aa59;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='12px' height='11px'%3E%3Cpath fill-rule='evenodd' stroke='rgb(255, 255, 255)' stroke-width='2px' stroke-linecap='butt' stroke-linejoin='miter' fill='none' d='M2.692,3.672 L4.682,5.756 L8.226,1.463 '/%3E%3C/svg%3E");
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+          opacity: 1;
         }
       }
     }
@@ -87,4 +124,81 @@
 
 .d-none {
   display: none;
+}
+
+@media @tablet-widths {
+  .intro-modal {
+    left: calc(50% - 764px/2);
+    box-sizing: border-box;
+    & .intro-modal__block {
+      width: 640px;
+      padding: 120px 40px;
+      & .modal-form {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        & .form-cart {
+          & input {
+            width: 144px;
+          }
+        }
+        & .modal-form__checkbox {
+          margin-top: 45px;
+          & input+label::before {
+            left: -10px;
+          }
+          & input+label::after {
+            left: -10px;
+          }
+        }
+      }
+      & .modal-form__close {
+        &::before {
+          width: 25px;
+          top: 13px;
+          left: 3px;
+        }
+        &::after {
+          width: 25px;
+          top: 13px;
+          left: 3px;
+        }
+      }
+    }
+  }
+}
+
+@media @desktop-widths {
+  .intro-modal {
+    left: calc(50% - 1366px/2);
+    & .intro-modal__block {
+      width: 1165px;
+      padding: 200px 150px;
+      & .modal-form {
+        & .form-cart {
+          & input {
+            width: 220px;
+          }
+        }
+        & .modal-form__checkbox {
+          margin-top: 45px;
+          & input {
+            background: #91aa59;
+          }
+        }
+      }
+      & .modal-form__close {
+        width: 35px;
+        height: 35px;
+        &::before {
+          width: 30px;
+          top: 15px;
+        }
+        &::after {
+          width: 30px;
+          top: 15px;
+        }
+      }
+    }
+  }
 }

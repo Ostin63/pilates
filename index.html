@@ -92,7 +92,7 @@
             <input type="text" id="E-mail" placeholder="E-mail">
           </div>
           <div class="modal-form__checkbox">
-            <input type="checkbox" id="checkbox">
+            <input class="visually-hidden" type="checkbox" id="checkbox" checked >
             <label for="checkbox">Я согласен на обработку
               персональных данных</label>
           </div>
@@ -308,12 +308,15 @@
             <p>Хожу на пилатес уже пять месяцев. После десяти занятий уже увиделарезультат: тело подтянулось,
               улучшилась осанка,
               появился пресс.</p>
-            <img class="reviews" src="img/reviews-764.png" alt="foto">
+              <picture>
+                <source media="(min-width: 1366px)" srcset="img/reviews-1366.png">
+                <img src="img/reviews-764.png" alt="foto">
+              </picture>
           </div>
         </li>
         <li class="reviews__item">
           <picture>
-            <source media="(min-width: 1366px)" srcset="img/logo-1366.png">
+            <source media="(min-width: 1366px)" srcset="img/lisa-1366.png">
             <img src="img/lisa.png" alt="lisa">
           </picture>
           <div class="reviews__item--title">
@@ -336,7 +339,10 @@
             <p>Очень нравятся занятия, хожу уже пять месяцев. На занятиях делаем много упражнений на пресс, бедра и
               спину. Мышци
               подтянулись, появился рельеф и хорошее настроение :)</p>
-            <img class="reviews" src="img/reviews-764.png" alt="foto">
+            <picture>
+              <source media="(min-width: 1366px)" srcset="img/reviews-1366.png">
+              <img src="img/reviews-764.png" alt="foto">
+            </picture>
           </div>
         </li>
         <li class="reviews__item">
@@ -364,7 +370,10 @@
             <p>Рекомендую заниматься всем! У меня сколиоз и спина часто болит после рабочего дня. После занятий
               появилась лекость в
               мышцах и свобода движений. Приходите!</p>
-            <img class="reviews" src="img/reviews-764.png" alt="foto">
+            <picture>
+              <source media="(min-width: 1366px)" srcset="img/reviews-1366.png">
+              <img src="img/reviews-764.png" alt="foto">
+            </picture>
           </div>
         </li>
       </ul>
@@ -401,7 +410,7 @@
         <div class="footer__copyright">Pilates Plus 2017 &copy;</div>
         <div class="footer__logo">
           <picture>
-            <source media="(min-width: 11366px)" srcset="img/logo-1366.png">
+            <source media="(min-width: 1366px)" srcset="img/logo-1366.png">
             <img src="img/logo-320.png" alt="логотип">
           </picture>
           <p class="footer__logo--text">pilates+</p>
