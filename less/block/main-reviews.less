@@ -28,6 +28,9 @@
         justify-content: space-between;
         align-items: center;
       }
+      & .reviews {
+        display: none;
+      }
     }
   }
 }
@@ -74,12 +77,12 @@
         }
         & .reviews__item--social {
           margin: 0;
-          
           & p {
             margin: 0;
           }
         }
         & .reviews {
+          display: block;
           position: absolute;
           width: 41px;
           height: auto;
@@ -91,7 +94,7 @@
   }
   .owl-nav .owl-prev {
     position: absolute;
-    top: 140px;
+    top: 70px;
     left: -70px;
     z-index: 5;
     outline: none;
@@ -108,7 +111,7 @@
   }
   .owl-nav .owl-next {
     position: absolute;
-    top: 140px;
+    top: 70px;
     right: -50px;
     z-index: 5;
     outline: none;

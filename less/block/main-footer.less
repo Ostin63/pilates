@@ -27,3 +27,22 @@
     align-items: center;
   }
 }
+
+@media @tablet-widths {
+  .main-footer {
+    padding-top: 20px;
+  }
+  .footer__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .footer__block {
+    flex-direction: row;
+    & .footer__copyright {
+      order: 0;
+    }
+    & .footer__social {
+      margin-bottom: 0;
+    }
+  }
+}

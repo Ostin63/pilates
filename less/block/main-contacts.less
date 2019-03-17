@@ -4,11 +4,32 @@
       margin-right: 5px;
     }
   }
+}
+
+.contacts__block {
+  padding-left: 20px;
   & .contacts__mail {
     margin-bottom: 50px;
   }
-  & .contacts__map {
-    width: 100%;
-    margin: 0 auto;
+}
+
+.contacts__map {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media @tablet-widths {
+  .main-contacts {
+    position: relative;
+    & .contacts__block {
+      position: absolute;
+      top: 160px;
+      padding: 40px;
+      color: #fff;
+      background: #91aa59;
+      & .contacts__mail a {
+        color: #fff;
+      }
+    }
   }
 }
