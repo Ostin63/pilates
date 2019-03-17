@@ -585,6 +585,10 @@ p {
   font-size: 20px;
   margin-left: 5px;
 }
+.intro__img img {
+  width: 281px;
+  height: 198px;
+}
 .main-schedule__container {
   padding-top: 40px;
 }
@@ -1128,11 +1132,13 @@ p {
     width: 320px;
   }
   .main-content__container .intro__img {
-    width: 417px;
-    height: auto;
     position: absolute;
     top: 100px;
     right: 60px;
+  }
+  .main-content__container .intro__img img {
+    width: 417px;
+    height: 307px;
   }
   .main-content__schedule {
     display: -webkit-box;
@@ -1391,7 +1397,7 @@ p {
     font-size: 48px;
   }
   h3 {
-    font-size: 48px;
+    font-size: 27px;
   }
   .btn {
     font-size: 19px;
@@ -1427,7 +1433,7 @@ p {
   .main-content__container {
     margin-bottom: 500px;
   }
-  .main-content__container .intro__img {
+  .main-content__container .intro__img img {
     width: 855px;
     height: 630px;
   }
