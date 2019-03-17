@@ -67,6 +67,7 @@
       </div>
       <div class="intro__img">
         <picture>
+          <source media="(min-width: 1366px)" srcset="img/intro-1366.png">
           <source media="(min-width: 764px)" srcset="img/intro-764.png">
           <img src="img/intro-320.png" alt="intro">
         </picture>
@@ -100,7 +101,7 @@
         <button class="modal-form__close"></button>
       </div>
     </div>
-    <section class="main-content__container container">
+    <section class="main-schedule__container container">
       <h2 class="schedule__title"><span>&mdash;</span>Расписание и стоимость</h2>
       <div class="main-content__schedule">
         <div class="schedule__cart--beginner cart">
@@ -126,7 +127,7 @@
               <span>10:00</span>
             </li>
           </ul>
-          <button class="cart__button btn">Записаться<span><svg xmlns="http://www.w3.org/2000/svg"
+          <button class="cart__button btn">Записаться<span class="cart__button--arrow"><svg xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" width="37.5px" height="16px">
                 <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt"
                   stroke-linejoin="miter" fill="rgb(255, 255, 255)"
@@ -134,7 +135,15 @@
                 <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-linecap="butt"
                   stroke-linejoin="miter" fill="none" d="M29.868,1.075 L35.485,7.083 L29.870,13.094 " />
               </svg>
-            </span></button>
+            </span><span class="button-arrow"><svg
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="75.5px"
+              height="15px">
+              <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt"
+                stroke-linejoin="miter" fill="#fff"
+                d="M0.594,6.000 L69.219,6.000 L69.219,8.000 L0.594,8.000 L0.594,6.000 Z" />
+              <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-linecap="butt"
+                stroke-linejoin="miter" fill="none" d="M66.050,1.004 L72.657,6.994 L66.052,12.986 " />
+            </svg></span></button>
         </div>
         <div class="schedule__cart--profi cart">
           <h3 class="cart__title"><span>уровень</span>Профи</h3>
@@ -159,7 +168,7 @@
               <span>19:30</span>
             </li>
           </ul>
-          <button class="cart__button btn">Записаться<span><svg xmlns="http://www.w3.org/2000/svg"
+          <button class="cart__button btn">Записаться<span class="cart__button--arrow"><svg xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" width="37.5px" height="16px">
                 <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt"
                   stroke-linejoin="miter" fill="rgb(255, 255, 255)"
@@ -167,7 +176,15 @@
                 <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-linecap="butt"
                   stroke-linejoin="miter" fill="none" d="M29.868,1.075 L35.485,7.083 L29.870,13.094 " />
               </svg>
-            </span></button>
+            </span><span class="button-arrow"><svg
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="75.5px"
+              height="15px">
+              <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt"
+                stroke-linejoin="miter" fill="#fff"
+                d="M0.594,6.000 L69.219,6.000 L69.219,8.000 L0.594,8.000 L0.594,6.000 Z" />
+              <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-linecap="butt"
+                stroke-linejoin="miter" fill="none" d="M66.050,1.004 L72.657,6.994 L66.052,12.986 " />
+            </svg></span></button>
         </div>
         <div class="schedule__cart--master cart">
           <h3 class="cart__title"><span>уровень</span>Мастер</h3>
@@ -192,7 +209,7 @@
               <span>21:30</span>
             </li>
           </ul>
-          <button class="cart__button btn">Записаться<span><svg xmlns="http://www.w3.org/2000/svg"
+          <button class="cart__button btn">Записаться<span class="cart__button--arrow"><svg xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" width="37.5px" height="16px">
                 <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt"
                   stroke-linejoin="miter" fill="rgb(255, 255, 255)"
@@ -200,16 +217,27 @@
                 <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-linecap="butt"
                   stroke-linejoin="miter" fill="none" d="M29.868,1.075 L35.485,7.083 L29.870,13.094 " />
               </svg>
-            </span></button>
+            </span><span class="button-arrow"><svg
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="75.5px"
+              height="15px">
+              <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt"
+                stroke-linejoin="miter" fill="#fff"
+                d="M0.594,6.000 L69.219,6.000 L69.219,8.000 L0.594,8.000 L0.594,6.000 Z" />
+              <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-linecap="butt"
+                stroke-linejoin="miter" fill="none" d="M66.050,1.004 L72.657,6.994 L66.052,12.986 " />
+            </svg></span></button>
         </div>
       </div>
     </section>
-    <section class="mani-info container">
+    <section class="main-info container">
       <h2 class="main-info__title"><span>&mdash;</span>Как проходят занятия</h2>
       <ul class="main-info__item">
         <li class="main-info__list">
           <h3 class="list__title">Дыхательные техники</h3>
-          <img class="info-img" src="img/breathing-320.png" alt="breathing">
+          <picture>
+            <source media="(min-width: 1366px)" srcset="img/breathing-1366.png">
+            <img class="info-img" src="img/breathing-320.png" alt="breathing">
+          </picture>
           <div class="list-block">
             <p class="list__text">Специальные дыхательные упражнения помогут сконцентрировать внимание и сфокусировать сознание на
               мышцах
@@ -218,7 +246,10 @@
         </li>
         <li class="main-info__list">
           <h3 class="list__title">Разминка</h3>
-          <img class="info-img" src="img/warm-up-320.png" alt="warm up">
+          <picture>
+            <source media="(min-width: 1366px)" srcset="img/warm-up-1366.png">
+            <img class="info-img" src="img/warm-up-320.png" alt="warm up">
+          </picture>
           <div class="list-block">
             <p class="list__text">Перед началом занятия разогреваем тело: проработываем мышцы спины, шеи, выполняем упражнения на
               баланс
@@ -227,7 +258,10 @@
         </li>
         <li class="main-info__list">
           <h3 class="list__title">Основной блок</h3>
-          <img class="info-img" src="img/main-block-320.png" alt="main block">
+          <picture>
+            <source media="(min-width: 1366px)" srcset="img/main-block-1366.png">
+            <img class="info-img" src="img/main-block-320.png" alt="main block">
+          </picture>
           <div class="list-block">
             <p class="list__text">Упражнения выполняются лежа на коврике без оборудования или с малым оборудованием, в медленном
               темпе</p>
@@ -235,7 +269,10 @@
         </li>
         <li class="main-info__list">
           <h3 class="list__title">Стрейчинг</h3>
-          <img class="info-img" src="img/stretching-320.png" alt="stretching">
+          <picture>
+            <source media="(min-width: 1366px)" srcset="img/stretching-1366.png">
+            <img class="info-img" src="img/stretching-320.png" alt="stretching">
+          </picture>
           <div class="list-block">
             <p class="list__text">В конце занятия выполняем специальные упражнения для развития гибкости, снятия усталости, стресса и
             мышечного напряжения</p>
@@ -247,7 +284,10 @@
       <h2 class="reviews__title"><span>&mdash;</span>Отзывы</h2>
       <ul class="owl-carousel owl-theme reviews__list">
         <li class="reviews__item">
-          <img src="img/Veronika.png" alt="Veronika">
+          <picture>
+            <source media="(min-width: 1366px)" srcset="img/veronika-1366.png">
+            <img src="img/veronika.png" alt="veronika">
+          </picture>
           <div class="reviews__item--title">
             <h4>Вероника Кулешова</h4>
             <div class="reviews__item--social">
@@ -272,7 +312,10 @@
           </div>
         </li>
         <li class="reviews__item">
-          <img src="img/Lisa.png" alt="Lisa">
+          <picture>
+            <source media="(min-width: 1366px)" srcset="img/logo-1366.png">
+            <img src="img/lisa.png" alt="lisa">
+          </picture>
           <div class="reviews__item--title">
             <h4>Елизавета Смирнова</h4>
             <div class="reviews__item--social">
@@ -297,7 +340,10 @@
           </div>
         </li>
         <li class="reviews__item">
-          <img src="img/Kristina.png" alt="Kristina">
+          <picture>
+            <source media="(min-width: 1366px)" srcset="img/kristina-1366.png">
+            <img src="img/kristina.png" alt="kristina">
+          </picture>
           <div class="reviews__item--title">
             <h4>Кристина Егорова</h4>
             <div class="reviews__item--social">
