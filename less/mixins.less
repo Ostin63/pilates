@@ -1,13 +1,16 @@
 .container() {
-  width: 290px;
+  min-width: 290px;
   margin: 0 auto;
   padding: 0 15px;
+  @media @min-tablet-widths {
+    min-width: 490px;
+  }
   @media @tablet-widths {
-    width: 764px;
+    min-width: 764px;
     padding: 0 62px;
   }
   @media @desktop-widths {
-    width: 1366px;
+    min-width: 1366px;
     padding: 0 100px;
   }
 }
