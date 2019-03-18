@@ -18,7 +18,8 @@ $(document).ready(function () {
     }
   });
   $('.intro__button').on('click', function(evt){
-    $('.intro-modal').removeClass('d-none')
+    $('.intro-modal').removeClass('d-none'),
+    $('.intro-modal').addClass('show')
   });
   $('.modal-form__close').on('click', function (evt) {
     $('.intro-modal').addClass('d-none')

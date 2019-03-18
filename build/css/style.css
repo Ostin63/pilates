@@ -487,6 +487,49 @@ p {
   -webkit-box-shadow: 0px 0px 5px 0px #00000075;
           box-shadow: 0px 0px 5px 0px #00000075;
 }
+.d-none {
+  display: none;
+}
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+.show {
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
+}
 .header {
   position: relative;
   height: 475px;
@@ -617,6 +660,28 @@ p {
 .intro__img img {
   width: 281px;
   height: 198px;
+}
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+.show {
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
 }
 .main-schedule__container {
   padding-top: 40px;
@@ -1018,8 +1083,27 @@ p {
   -webkit-box-shadow: 0px 0px 15px -4px #bcbcbc;
           box-shadow: 0px 0px 15px -4px #bcbcbc;
 }
-.d-none {
-  display: none;
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+.show {
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
 }
 .header-modal__container {
   width: 100%;
