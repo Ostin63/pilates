@@ -18,16 +18,18 @@ $(document).ready(function () {
     }
   });
   $('.intro__button').on('click', function(evt){
-    $('.intro-modal').removeClass('d-none'),
-    $('.intro-modal').addClass('show')
+    $('.intro-modal').removeClass('d-none').addClass('show')
   });
   $('.modal-form__close').on('click', function (evt) {
-    $('.intro-modal').addClass('d-none')
+    $('.intro-modal').addClass('d-none').removeClass('show')
   });
   $('.main-nav__toogles').on('click', function(evt) {
-    $('.header-modal__container').removeClass('d-none')
+    $('.header-modal__container').removeClass('d-none').addClass('show')
   });
   $('.modal-close').on('click', function (evt){
-    $('.header-modal__container').addClass(('d-none'))
+    $('.header-modal__container').addClass('d-none').removeClass('show')
   });
+  $('.modal-manu a').on('click', function(evt){
+    $('.header-modal__container').addClass('d-none').removeClass('show')
+  })
 });
