@@ -188,6 +188,22 @@
   }
 }
 
+@media @min-desktop-widths {
+  .main-nav {
+    & .main-nav__toogles {
+      & .toogles {
+        background: #000;
+        &::before {
+          background: #000;
+        }
+        &::after {
+          background: #000;
+        }
+      }
+    }
+  }
+}
+
 @media @desktop-widths {
   .header {
     height: 787px;
@@ -212,13 +228,16 @@
       & .toogles {
         left: 1px;
         width: 26px;
+        background: #fbfbfb;
         &::before {
           top: -8px;
           width: 15px;
+          background: #fbfbfb;
         }
         &::after {
           top: 8px;
           width: 26px;
+          background: #fbfbfb;
         }
       }
     }
@@ -226,6 +245,22 @@
   .header-title {
     & .header-title__text {
       font-size: 58px;
+    }
+  }
+}
+
+@media @max-desktop-widths {
+  .main-nav {
+    & .main-nav__toogles {
+      & .toogles {
+        background: #000;
+        &::before {
+          background: #000;
+        }
+        &::after {
+          background: #000;
+        }
+      }
     }
   }
 }
