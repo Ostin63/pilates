@@ -1592,7 +1592,7 @@ p {
     padding: 120px 40px;
   }
 }
-@media (min-width: 998px) {
+@media (min-width: 1015px) {
   .container {
     min-width: 998px;
   }
@@ -1840,7 +1840,7 @@ p {
     left: 0;
   }
 }
-@media (min-width: 1585px) {
+@media (min-width: 1602px) {
   .container {
     min-width: 1585px;
   }
