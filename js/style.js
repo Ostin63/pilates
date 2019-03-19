@@ -32,6 +32,9 @@ $(document).ready(function () {
   $('.modal-manu a').on('click', function (evt) {
     $('.header-modal__container').addClass('d-none').removeClass('show')
   });
+  $('.cart__button').on('click', function(evt){
+    $('.intro-modal').removeClass('d-none').addClass('show')
+  });
 
     jQuery.validator.addMethod("checkMask", function (value, element) {
       return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value);
