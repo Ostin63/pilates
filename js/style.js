@@ -33,42 +33,44 @@ $(document).ready(function () {
     $('.header-modal__container').addClass('d-none').removeClass('show')
   });
 
-  jQuery.validator.addMethod("checkMask", function (value, element) {
-    return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value);
-  });
+    jQuery.validator.addMethod("checkMask", function (value, element) {
+      return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value);
+    });
 
-  $('.modal-form').validate({
-    rules: {
-      fname: {
-        required: true,
-        minlength: 2
+    $('.modal-form').validate({
+      rules: {
+        fname: {
+          required: true,
+          minlength: 2
+        },
+        fmail: {
+          required: true,
+          email: true
+        },
+        fphone: {
+          required: true,
+          checkMask: true
+        }
       },
-      fmail: {
-        required: true,
-        email: true
-      },
-      fphone: {
-        required: true,
-        checkMask: true
+      messages: {
+        fname: {
+          required: "Это поле обязательно",
+          minlength: "Введите не менее 2-х символов в поле 'Имя'"
+        },
+        fmail: {
+          required: "Это поле обязательно",
+          email: "Необходим формат адреса email"
+        },
+        fphone: {
+          required: "Это поле обязательно",
+          checkMask: "Введите полный номер телефона"
+        },
+        fcheckbox: {
+          required: "Необходимо Ваше согласие"
+        }
       }
-    },
-    messages: {
-      fname: {
-        required: "Это поле обязательно",
-        minlength: "Введите не менее 2-х символов в поле 'Имя'"
-      },
-      fmail: {
-        required: "Это поле обязательно",
-        email: "Необходим формат адреса email"
-      },
-      fphone: {
-        required: "Это поле обязательно",
-        checkMask: "Введите полный номер телефона"
-      },
-      fcheckbox : {
-        required: "Необходимо Ваше согласие"
-      }
-    }
-  });
-  $('#phone').mask("+7(999)999-9999", { autoclear: false });
+    });
+    $('#phone').mask("+7(999)999-9999", { 
+      autoclear: false 
+    });
 });
