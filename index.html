@@ -78,25 +78,25 @@
         <h2 class="intro-modal__title">Хочешь записаться на занятие?</h2>
         <p class="intro-modal__text">Оставьте контакты и наши менеджеры
           свяжуться в ближайшее время</p>
-        <form class="modal-form" action="">
+        <form class="modal-form" action="/" method="post" enctype="multipart/form-data">
           <div class="modal-form__phone form-cart">
             <label class="visually-hidden" for="phone">Телефон</label>
-            <input type="text" id="phone" placeholder="Телефон">
+            <input type="text" id="phone" placeholder="Телефон" name="fphone" required>
           </div>
           <div class="modal-form__name form-cart">
             <label class="visually-hidden" for="name">Имя</label>
-            <input type="text" id="name" placeholder="Имя">
+            <input type="text" id="name" placeholder="Имя" name="fname" required>
           </div>
           <div class="modal-form__mail form-cart">
-            <label class="visually-hidden" for="E-mail">E-mail</label>
-            <input type="text" id="E-mail" placeholder="E-mail">
+            <label class="visually-hidden" for="email">E-mail</label>
+            <input type="text" id="email" placeholder="E-mail" name="fmail" required>
           </div>
           <div class="modal-form__checkbox">
-            <input class="visually-hidden" type="checkbox" id="checkbox" checked >
+            <input class="" type="checkbox" id="checkbox" name="fcheckbox" checked required>
             <label for="checkbox">Я согласен на обработку
               персональных данных</label>
           </div>
-          <input class="modal-form__button" type="button" value="Записатьтся">
+          <input class="modal-form__button" type="submit" value="Записатьтся">
         </form>
         <button class="modal-form__close"></button>
       </div>
@@ -441,6 +441,8 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/style.js"></script>
 </body>

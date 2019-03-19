@@ -487,6 +487,9 @@ p {
   -webkit-box-shadow: 0px 0px 5px 0px #00000075;
           box-shadow: 0px 0px 5px 0px #00000075;
 }
+.error {
+  color: red;
+}
 .d-none {
   display: none;
 }
@@ -976,12 +979,25 @@ p {
   text-align: center;
 }
 .intro-modal .intro-modal__block .modal-form .form-cart {
+  position: relative;
   margin-bottom: 20px;
 }
 .intro-modal .intro-modal__block .modal-form .form-cart input {
   border: none;
   border-bottom: 1px solid #000;
   outline: none;
+}
+.intro-modal .intro-modal__block .modal-form .form-cart input.error {
+  color: #ff0707;
+  border-bottom: 1px solid #ff0707;
+}
+.intro-modal .intro-modal__block .modal-form .form-cart label.error {
+  position: absolute;
+  width: 100%;
+  bottom: -15px;
+  left: 0;
+  text-align: left;
+  font-size: 12px;
 }
 .intro-modal .intro-modal__block .modal-form .modal-form__button {
   margin-top: 30px;
@@ -1004,9 +1020,11 @@ p {
   -webkit-box-shadow: 0px 0px 10px 0px #00000000;
           box-shadow: 0px 0px 10px 0px #00000000;
 }
+.intro-modal .intro-modal__block .modal-form .modal-form__checkbox {
+  position: relative;
+}
 .intro-modal .intro-modal__block .modal-form .modal-form__checkbox label {
   position: relative;
-  display: block;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -1014,28 +1032,36 @@ p {
           user-select: none;
   margin-left: 10px;
 }
-.intro-modal .intro-modal__block .modal-form .modal-form__checkbox input + label::before {
+.intro-modal .intro-modal__block .modal-form .modal-form__checkbox #fcheckbox-error {
+  position: absolute;
+  bottom: -5px;
+  font-size: 12px;
+}
+.intro-modal .intro-modal__block .modal-form .modal-form__checkbox input {
+  position: relative;
+}
+.intro-modal .intro-modal__block .modal-form .modal-form__checkbox input::before {
   content: "";
   position: absolute;
-  left: 4px;
-  top: 0;
+  top: -3px;
+  left: 0;
   width: 19px;
   height: 19px;
   background: #91aa59;
   opacity: 1;
   z-index: 2;
 }
-.intro-modal .intro-modal__block .modal-form .modal-form__checkbox input:checked + label::before {
+.intro-modal .intro-modal__block .modal-form .modal-form__checkbox input:checked::before {
   opacity: 0;
 }
-.intro-modal .intro-modal__block .modal-form .modal-form__checkbox input + label::after {
+.intro-modal .intro-modal__block .modal-form .modal-form__checkbox input::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 4px;
+  top: -3px;
+  left: 0;
   width: 19px;
   height: 19px;
-  background: #91aa59;
+  background-color: #91aa59;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='12px' height='11px'%3E%3Cpath fill-rule='evenodd' stroke='rgb(255, 255, 255)' stroke-width='2px' stroke-linecap='butt' stroke-linejoin='miter' fill='none' d='M2.692,3.672 L4.682,5.756 L8.226,1.463 '/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: 50% 50%;
