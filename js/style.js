@@ -35,7 +35,7 @@ $(document).ready(function () {
   $('.cart__button').on('click', function(evt){
     $('.intro-modal').removeClass('d-none').addClass('show')
   });
-
+  
     jQuery.validator.addMethod("checkMask", function (value, element) {
       return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value);
     });
