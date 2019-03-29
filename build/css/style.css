@@ -443,6 +443,8 @@ input[type="radio"].visually-hidden {
   min-width: 290px;
   margin: 0 auto;
   padding: 0 15px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 a {
   display: block;
