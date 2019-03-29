@@ -475,6 +475,8 @@ p {
   border-bottom-right-radius: 25px;
   background: rgba(255, 255, 255, 0);
   outline: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .btn:hover,
 .btn:focus {
